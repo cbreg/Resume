@@ -1,9 +1,10 @@
-﻿body {
+﻿/* Geral ----- */
+body {
     margin: 0px;
     background-image: linear-gradient(-90deg, rgba(242,242,242,1) 0%,rgba(242,242,242,1) 50%,rgba(242,242,242,1) 50%,rgba(255,255,255) 50%,rgba(255,255,255) 100%);
 }
 
-centralizador {
+.centralizador {
     width: 100%;
     max-width: 1000px;
     display: table;
@@ -12,23 +13,8 @@ centralizador {
     height: 100vh;
 }
 
-esquerda, direita {
-    display: table-cell;
-    width: auto;
-    padding: 30px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-esquerda {
-    background-color: #FFF;
-    width: 40%;
-}
-
-direita {
-    background-color: #EEE;
-    width: 60%;
+h1, h2, h3 {
+    margin: 0px;
 }
 
 h1, h2, h3 {
@@ -45,6 +31,35 @@ h1 {
     font-size: 50px;
 }
 
+.esquerda, .direita {
+    display: table-cell;
+    width: auto;
+    padding: 30px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid > blocos > bloco > ul {
+    margin: 5px 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.grid > blocos > bloco > ul > li {
+    margin: 3px 0px;
+}
+
+/* Direita ----- */
+.direita {
+    background-color: #EEE;
+    width: 60%;
+}
+
 .descricao {
     text-align: justify;
 }
@@ -57,13 +72,34 @@ h1 {
     margin-top: 5px;
 }
 
+/* Esquerda ----- */
+.esquerda {
+    background-color: #FFF;
+    width: 40%;
+}
+
+.blocos {
+    display: table;
+}
+
+.bloco {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.bloco:last-child {
+    margin-bottom: 0px;
+}
+
+/* Responsividade ----- */
 @media (max-width: 750px) {
     body {
         background-image: none;
         background-color: #EEE;
     }
 
-    esquerda, direita {
+    .esquerda, .direita {
         display: block;
         width: 100%;
     }
