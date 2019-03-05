@@ -27,6 +27,35 @@ h1 {
     font-size: 50px;
 }
 
+a:link {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: #171E28;
+}
+
+a:visited {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: #171E28;
+}
+
+a:hover {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #49A078;
+}
+
+a:active {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
 .esquerda, .direita {
     display: table-cell;
     width: auto;
@@ -48,7 +77,14 @@ h1 {
 
         .grid > .container > .item > ul > li {
             margin: 3px 0px;
+            line-height: 20px;
         }
+
+            .grid > .container > .item > ul > li i {
+                font-size: .7em;
+                opacity: 0.7;
+                font-style: normal;
+            }
 
 /* Direita ----- */
 .direita {
@@ -95,6 +131,12 @@ h1 {
         margin-bottom: 0px;
     }
 
+.image-line img {
+    margin-bottom: -3px;
+    margin-right: 5px;
+    width: 18px;
+}
+
 /* Responsividade ----- */
 @media (max-width: 750px) {
     body {
@@ -139,6 +181,10 @@ h1 {
             min-width: 300px;
         }
 
+            .esquerda h1 {
+                font-size: 40px;
+            }
+
         .esquerda, .direita {
             display: table-cell;
             width: auto;
@@ -147,10 +193,6 @@ h1 {
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
         }
-
-            .esquerda h1 {
-                font-size: 40px;
-            }
 
         .container {
             flex-direction: row;
