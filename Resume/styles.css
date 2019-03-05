@@ -127,9 +127,20 @@ a:hover {
     }
 
     .grupo-temporal ul > li {
+        list-style: none;
         margin-bottom: 15px;
         padding-left: 15px;
     }
+
+        .grupo-temporal ul > li::before {
+            content: "\2022";
+            color: #C9C9C9;
+            font-size: 40px;
+            font-weight: bold;
+            position: absolute;
+            margin-top: -16px;
+            margin-left: -36px;
+        }
 
     .grupo-temporal .evento-temporal .titulo {
         font-size: 18px;
