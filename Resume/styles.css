@@ -28,32 +28,17 @@ h1 {
 }
 
 a:link {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
     text-decoration: none;
     color: #171E28;
 }
 
 a:visited {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
     text-decoration: none;
     color: #171E28;
 }
 
 a:hover {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
     color: #49A078;
-}
-
-a:active {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
 }
 
 .esquerda, .direita {
@@ -119,8 +104,7 @@ a:active {
     min-height: 60px;
 }
 
-    .grupo-temporal p {
-        margin-left: 62px;
+    .grupo-temporal ul {
         margin-bottom: 25px;
         display: block;
     }
@@ -141,6 +125,35 @@ a:active {
         width: 25px;
         margin-bottom: -3px;
     }
+
+    .grupo-temporal ul > li {
+        margin-bottom: 15px;
+        padding-left: 15px;
+    }
+
+    .grupo-temporal .evento-temporal .titulo {
+        font-size: 18px;
+    }
+
+        .grupo-temporal .evento-temporal .titulo .tempo {
+            font-size: 16px;
+            float: right;
+            font-weight: 700;
+            color: #171E28;
+        }
+
+    .grupo-temporal .evento-temporal .legenda, .grupo-temporal .evento-temporal .bonus {
+        font-size: 12px;
+    }
+
+    .grupo-temporal .evento-temporal .bonus {
+        margin-top: 5px;
+    }
+
+        .grupo-temporal .evento-temporal .bonus img {
+            width: 15px;
+            margin-right: 3px;
+        }
 
 /* Esquerda ----- */
 .esquerda {
@@ -185,6 +198,10 @@ a:active {
             width: 20px;
             height: 20px;
         }
+
+            .skill-line .dots .dot:hover {
+                opacity: 0.8;
+            }
 
         .skill-line .dots .checked {
             background: #49A078;
