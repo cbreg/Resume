@@ -292,5 +292,9 @@ a:hover {
         .item {
             width: 50%;
         }
+
+        .grupo-temporal .evento-temporal .titulo .tempo {
+            font-size: 12px;
+        }
     }
 }
