@@ -119,3 +119,10 @@ h1 {
         width: 50%;
     }
 }
+
+/* Impressão ----- */
+@media print {
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
