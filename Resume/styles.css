@@ -17,10 +17,6 @@ h1, h2, h3 {
     margin: 0px;
 }
 
-h1, h2, h3 {
-    margin: 0px;
-}
-
 h1, h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -124,5 +120,44 @@ h1 {
 @media print {
     .no-print, .no-print * {
         display: none !important;
+    }
+
+    /* Responsividade na impressão ----- */
+    @media (max-width: 750px) {
+        body {
+            background-image: linear-gradient(-90deg, rgba(242,242,242,1) 0%,rgba(242,242,242,1) 50%,rgba(242,242,242,1) 50%,rgba(255,255,255) 50%,rgba(255,255,255) 100%);
+        }
+
+        .direita {
+            background-color: #EEE;
+            width: 60%;
+        }
+
+        .esquerda {
+            background-color: #FFF;
+            width: 40%;
+            min-width: 300px;
+        }
+
+        .esquerda, .direita {
+            display: table-cell;
+            width: auto;
+            padding: 30px;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+            .esquerda h1 {
+                font-size: 40px;
+            }
+
+        .container {
+            flex-direction: row;
+        }
+
+        .item {
+            width: 50%;
+        }
     }
 }
